@@ -23,9 +23,11 @@ function Home() {
       <div className="featured-products-container container mt-4">
         <h2>Last Products</h2>
         {/* last products here */}
-        {lastProducts.map((product) => (
-            <ProductPreview {...product}/>
-        ))}
+        <div className="d-flex justify-content-center flex-warp">
+          {lastProducts.map((product) => (
+            <ProductPreview {...product} />
+          ))}
+        </div>
         <div>
           <Link
             to="/category/all"
